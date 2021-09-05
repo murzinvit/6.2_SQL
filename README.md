@@ -13,5 +13,5 @@
 
 3) Дать все привилегии пользователю test-admin-user на таблицы БД test_db: `grant all privileges on database test_db to test_admin_user;`</br>
 4) Cоздайте пользователя test-simple-user: `CREATE USER test_simple_user;` </br>
-5) Предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db: `GRANT ALL PRIVILEGES ON test_db TO test_simple_user;`</br>
-
+5) Предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db: </br>
+- `GRANT ALL PRIVILEGES ON test_db TO test_simple_user;`</br>
