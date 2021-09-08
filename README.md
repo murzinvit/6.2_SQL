@@ -8,9 +8,10 @@
 1) Создайте пользователя test-admin-user и БД test_db: </br>
 - `CREATE USER test_admin_user;` </br>
 - `CREATE DATABASE test_db;` </br>
-2) В БД test_db создайте таблицу orders и clients:  </br>
-- `CREATE TABLE orders (id serial, title varchar(255), price integer, PRIMARY KEY (id));` </br>
-- `CREATE TABLE clients (id serial PRIMARY KEY,family varchar(255),country varchar(255),FOREIGN KEY (id) REFERENCES orders);`</br>
+3) В БД test_db создайте таблицу orders и clients:  </br>
+- `CREATE TABLE orders (id SERIAL PRIMARY KEY, title CHARACTER VARYING(80), price INTEGER DEFAULT 0);` </br>
+- `CREATE TABLE clients (id SERIAL PRIMARY KEY, family_name character varying(80), country character varying(80), FOREIGN KEY (id) REFERENCES orders);`</br>
+- `CREATE UNIQUE INDEX title_idx ON orders (title);`
 
 3) Дать все привилегии пользователю test-admin-user на таблицы БД test_db: `</br>
 - `grant all privileges on database test_db to test_admin_user;`</br>
