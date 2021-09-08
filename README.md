@@ -20,7 +20,7 @@
 6) Предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db: </br>
 - `\connect test_db` </br>
 - `GRANT SELECT,INSERT,UPDATE,DELETE ON orders TO test_simple_user;`</br>
-### Результат: </br>
+Результат: </br>
 1)Итоговый список БД после выполнения пунктов выше: </br>
 ![screen](https://github.com/murzinvit/screen/blob/f60667ff463698d45bc84c20e23e20f6945558d1/SQL_list_db.png) </br>
 2) Описание таблиц (describe): </br>
