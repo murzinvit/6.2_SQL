@@ -22,10 +22,11 @@
 - `GRANT SELECT,INSERT,UPDATE,DELETE ON orders TO test_simple_user;`</br>
 #### Результат: </br>
 
-Итоговый список БД после выполнения пунктов выше: </br>
+- Итоговый список БД после выполнения пунктов выше: </br>
 ![screen](https://github.com/murzinvit/screen/blob/f60667ff463698d45bc84c20e23e20f6945558d1/SQL_list_db.png) </br>
-Описание таблиц (describe): </br>
+- Описание таблиц (describe): </br>
 ![SQL_describe_orders](https://github.com/murzinvit/screen/blob/9b884616822cfa0d214a2b7057e8a9579a842ffa/SQL_describe_orders.png) </br>
-------------------------------------------------------------------------------------------------------------
+- ------------------------------------------------------------------------------------------------------------
 ![SQL_describe_clients](https://github.com/murzinvit/screen/blob/09f75ec59d8fed5098230460d44c76f3e9680f35/SQL_describe_clients.png) </br>
+
 ### Задача 3: </br>
