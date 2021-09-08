@@ -31,3 +31,11 @@
 4) Cписок пользователей с правами над таблицами test_db: </br>
 ![screen](https://github.com/murzinvit/screen/blob/607b29aae48f5b2f43299376b81a279bca409b95/SQL_acl_test_db.png) </br>
 ### Задача 3: </br>
+1) Используя SQL синтаксис - наполните таблицы следующими тестовыми данными: </br>
+- Пример: `insert into orders (title, price) values ('chocolate', 10);` </br>
+2) Вычислите количество записей для каждой таблицы: </br>
+- `select count(id) from orders` </br>
+[screen](https://github.com/murzinvit/screen/blob/df5aa6d208e5daaa6b8a49b5e633feeb0103910c/SQL_select_count_id_clients.png) </br>
+- `select count(id) from clients` </br>
+[screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
+#### Задача 4: </br>
