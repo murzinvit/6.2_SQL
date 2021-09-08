@@ -10,7 +10,7 @@
 - `CREATE DATABASE test_db;` </br>
 3) В БД test_db создайте таблицу orders и clients:  </br>
 - `CREATE TABLE orders (id SERIAL PRIMARY KEY, title CHARACTER VARYING(80), price INTEGER DEFAULT 0);` </br>
-- `CREATE TABLE clients (id SERIAL PRIMARY KEY,family_name character varying(80),country character varying(80),FOREIGN KEY (id) REFERENCES orders);`</br>
+- `CREATE TABLE clients (id SERIAL PRIMARY KEY,family_name character varying(80),country character varying(80), order integer, FOREIGN KEY (order) REFERENCES orders (id);`</br>
 - `CREATE UNIQUE INDEX title_idx ON orders (title);`
 - [Документация](https://postgrespro.ru/docs/postgrespro/9.5/sql-createindex) по индексам </br>
 4) Дать все привилегии пользователю test-admin-user на таблицы БД test_db: `</br>
@@ -39,3 +39,5 @@
 - `select count(id) from clients` </br>
 ![screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
 #### Задача 4: </br>
+1) Используя foreign keys свяжите записи из таблиц, согласно таблице: </br>
+- 
