@@ -1,9 +1,8 @@
 ### 6.2_SQL
 --------------------------------------------------------------------
 ### Задача 1: </br>
-Используя docker поднимите инстанс PostgreSQL (версию 12) c 2 volume: </br>
-1) `docker pull postgres` </br>
-2) `docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=user -e POSTGRES_DB=netology -v /DATABASE/postgres-data:/var/lib/postgreql/data -v /DATABASE/postgres-backup:/mnt --name postgres_srv postgres` </br>
+1)Используя docker поднимите инстанс PostgreSQL (версию 12) c 2 volume: </br>
+- `docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=user -e POSTGRES_DB=netology -v /DATABASE/postgres-data:/var/lib/postgreql/data -v /DATABASE/postgres-backup:/mnt --name postgres_srv postgres:latest` </br>
 
 ### Задача 2: </br>
 1) Создайте пользователя test-admin-user и БД test_db: </br>
