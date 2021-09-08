@@ -27,7 +27,7 @@
 ![SQL_describe_orders](https://github.com/murzinvit/screen/blob/9b884616822cfa0d214a2b7057e8a9579a842ffa/SQL_describe_orders.png) </br>
 ------------------------------------------------------------------------------------------------------------
 ![SQL_describe_clients](https://github.com/murzinvit/screen/blob/09f75ec59d8fed5098230460d44c76f3e9680f35/SQL_describe_clients.png) </br>
-3) SQL-запрос для выдачи списка пользователей с правами над таблицами test_db: <br>
-4) Cписок пользователей с правами над таблицами test_db </br>
-
+3) SQL-запрос для выдачи списка пользователей с правами над таблицами test_db: `SELECT datname,datact from pg_catalog.pg_user where datname = 'test_db';` <br>
+4) Cписок пользователей с правами над таблицами test_db: </br>
+[screen](https://github.com/murzinvit/screen/blob/607b29aae48f5b2f43299376b81a279bca409b95/SQL_acl_test_db.png) </br>
 ### Задача 3: </br>
