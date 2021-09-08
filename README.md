@@ -35,7 +35,7 @@
 - Пример: `insert into orders (title, price) values ('chocolate', 10);` </br>
 2) Вычислите количество записей для каждой таблицы: </br>
 - `select count(id) from orders` </br>
-[screen](https://github.com/murzinvit/screen/blob/df5aa6d208e5daaa6b8a49b5e633feeb0103910c/SQL_select_count_id_clients.png) </br>
+![screen](https://github.com/murzinvit/screen/blob/df5aa6d208e5daaa6b8a49b5e633feeb0103910c/SQL_select_count_id_clients.png) </br>
 - `select count(id) from clients` </br>
-[screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
+![screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
 #### Задача 4: </br>
