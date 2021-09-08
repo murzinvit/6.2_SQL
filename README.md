@@ -14,12 +14,12 @@
 - `CREATE UNIQUE INDEX title_idx ON orders (title);`
 - [Документация](https://postgrespro.ru/docs/postgrespro/9.5/sql-createindex) по индексам </br>
 4) Дать все привилегии пользователю test-admin-user на таблицы БД test_db: `</br>
-- `grant all privileges on database test_db to test_admin_user;`</br>
+- `GRANT SELECT,INSERT,DELETE,UPDATE ON  IN SCHEMA public TO test_admin_user;` </br>
 5) Cоздайте пользователя test-simple-user:  </br>
 - `CREATE USER test_simple_user;` </br>
 6) Предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db: </br>
 - `\connect test_db` </br>
-- `GRANT SELECT,INSERT,UPDATE,DELETE ON orders TO test_simple_user;`</br>
+- `GRANT SELECT,INSERT,UPDATE,DELETE ON orders, clients TO test_simple_user;`</br>
 Результат: </br>
 1)Итоговый список БД после выполнения пунктов выше: </br>
 ![screen](https://github.com/murzinvit/screen/blob/f60667ff463698d45bc84c20e23e20f6945558d1/SQL_list_db.png) </br>
