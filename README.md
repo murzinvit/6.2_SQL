@@ -40,7 +40,9 @@
 ![screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
 #### Задача 4: </br>
 1) Используя foreign keys свяжите записи из таблиц, согласно таблице: </br>
-
+- update clients set complite_order = 'Book' where family_name = 'Ivanov.I.I'; </br>
+- update clients set complite_order = 'Screen' where family_name = 'Petrov.P.P'; </br>
+- update clients set complite_order = 'Guitar' where family_name = 'Bah.I.S'; </br>
 #### Задача 5: </br>
 
 #### Задача 6: </br>
@@ -49,4 +51,4 @@
 #### Рабочие заметки: </br>
 Database backup: [test_db.sql](https://github.com/murzinvit/6.2_SQL/blob/30c37f35c5f85647e10a59693291f62b6c49d328/test_db.sql) </br>
 `pg_dump -U user -F c test_db > /mnt/test_db.sql` </br>
-`pg_restore -U user -d test_db < test_db.sql` </br>
+`pg_restore -U user -d test_db < /mnt/test_db.sql` </br>
