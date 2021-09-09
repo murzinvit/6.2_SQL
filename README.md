@@ -54,6 +54,7 @@
 - `update clients set complite_order = 'Guitar' where family_name = 'Bah.I.S';` </br>
 2) Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод данного запроса: </br>
 - `select family_name from clients where complite_order is not null;` </br>
+![screen](https://github.com/murzinvit/screen/blob/10119e68197b556a2d4089e8c6258d92ebf18ba9/SQL_selectt_orders_complite.jpg)
 #### Задача 5: </br>
 
 #### Задача 6: </br>
