@@ -60,9 +60,15 @@
 ![screen](https://github.com/murzinvit/screen/blob/971f68f2df3805625536d2f961f5919ff2e402d6/SQL_Explain_select.jpg) </br>
 Показан план для узла clients и пиблизительная оценка стоимости выполнения данного узла </br> 
 #### Задача 6: </br>
-
+1) Создайте бэкап БД test_db и поместите его в volume, предназначенный для бэкапов: </br>
+- `pg_dump -U user -F c test_db > /mnt/test_db.sql` </br>
+2) Остановите контейнер с PostgreSQL (но не удаляйте volumes) </br>
+- `docker stop postgres_srv` </br>
+3) Поднимите новый пустой контейнер с PostgreSQL: </br>
+- `docker run -d -e POSTGRES_USER=user -v /DATABASE/postgres-data:/var/lib/postgreql/data -v /DATABASE/postgres-backup:/mnt --name postgres_srv postgres:latest` </br>
+4) Восстановите БД test_db в новом контейнере: </br>
+- `psql -U user template1` </br>
+- `create database test_db;`, `exit` </br>
+- `pg_restore -U user -d test_db < /mnt/test_db.sql` </br>
+- `psql -U user test_db`
 --------------------------------------------------------------------------- </br>
-#### Рабочие заметки: </br>
-Database backup: [test_db.sql](https://github.com/murzinvit/6.2_SQL/blob/30c37f35c5f85647e10a59693291f62b6c49d328/test_db.sql) </br>
-`pg_dump -U user -F c test_db > /mnt/test_db.sql` </br>
-`pg_restore -U user -d test_db < /mnt/test_db.sql` </br>
