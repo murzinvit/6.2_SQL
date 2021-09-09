@@ -56,7 +56,8 @@
 - `select family_name from clients where complite_order is not null;` </br>
 ![screen](https://github.com/murzinvit/screen/blob/10119e68197b556a2d4089e8c6258d92ebf18ba9/SQL_selectt_orders_complite.jpg)
 #### Задача 5: </br>
-
+Получите полную информацию по выполнению запроса выдачи всех пользователей из задачи 4 (используя директиву EXPLAIN): </br>
+![screen](https://github.com/murzinvit/screen/blob/971f68f2df3805625536d2f961f5919ff2e402d6/SQL_Explain_select.jpg) </br>
 #### Задача 6: </br>
 
 --------------------------------------------------------------------------- </br>
