@@ -32,7 +32,16 @@
 ![screen](https://github.com/murzinvit/screen/blob/607b29aae48f5b2f43299376b81a279bca409b95/SQL_acl_test_db.png) </br>
 ### Задача 3: </br>
 1) Используя SQL синтаксис - наполните таблицы следующими тестовыми данными: </br>
-- Пример: `insert into orders (title, price) values ('Chocolate', 10);` </br>
+- `insert into orders (title, price) values ('Chocolate', 10);` </br>
+- `insert into orders (title, price) values ('Printer', 3000);` </br>
+- `insert into orders (title, price) values ('Book', 500);` </br>
+- `insert into orders (title, price) values ('Screen', 7000);` </br>
+- `insert into orders (title, price) values ('Guitar', 4000);` </br>
+- `insert into clients (famili_name, country) values ('Ivanov.I.I', 'USA');` </br>
+- `insert into clients (famili_name, country) values ('Petrov.P.P', 'Canada');` </br>
+- `insert into clients (famili_name, country) values ('Bah.I.S', 'Japan');` </br>
+- `insert into clients (famili_name, country) values ('Dio.R.D', 'Russia');` </br>
+- `insert into clients (famili_name, country) values ('Blackmore.R', 'Russia');` </br>
 2) Вычислите количество записей для каждой таблицы: </br>
 - `select count(id) from orders` </br>
 ![screen](https://github.com/murzinvit/screen/blob/df5aa6d208e5daaa6b8a49b5e633feeb0103910c/SQL_select_count_id_clients.png) </br>
