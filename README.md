@@ -18,7 +18,7 @@
 5) Cоздайте пользователя test-simple-user:  </br>
 - `CREATE USER test_simple_user;` </br>
 6) Предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db: </br>
-- `\connect test_db` </br>
+- `\connect test_db;` </br>
 - `GRANT SELECT,INSERT,UPDATE,DELETE ON orders, clients TO test_simple_user;`</br>
 Результат: </br>
 1)Итоговый список БД после выполнения пунктов выше: </br>
@@ -49,9 +49,9 @@
 ![screen](https://github.com/murzinvit/screen/blob/08a6c8f79e50210a3a5621ba555cadadb4850899/SQL_select_count_id_orders.png) </br>
 #### Задача 4: </br>
 1) Используя foreign keys свяжите записи из таблиц, согласно таблице: </br>
-- `update clients set complite_order = 'Book' where family_name = 'Ivanov.I.I'`; </br>
-- `update clients set complite_order = 'Screen' where family_name = 'Petrov.P.P'`; </br>
-- `update clients set complite_order = 'Guitar' where family_name = 'Bah.I.S'`; </br>
+- `update clients set complite_order = 'Book' where family_name = 'Ivanov.I.I';` </br>
+- `update clients set complite_order = 'Screen' where family_name = 'Petrov.P.P';` </br>
+- `update clients set complite_order = 'Guitar' where family_name = 'Bah.I.S';` </br>
 2) Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод данного запроса: </br>
 - `select family_name from clients where complite_order is not null;` </br>
 #### Задача 5: </br>
