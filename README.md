@@ -37,11 +37,11 @@
 - `insert into orders (title, price) values ('Book', 500);` </br>
 - `insert into orders (title, price) values ('Screen', 7000);` </br>
 - `insert into orders (title, price) values ('Guitar', 4000);` </br>
-- `insert into clients (famili_name, country) values ('Ivanov.I.I', 'USA');` </br>
-- `insert into clients (famili_name, country) values ('Petrov.P.P', 'Canada');` </br>
-- `insert into clients (famili_name, country) values ('Bah.I.S', 'Japan');` </br>
-- `insert into clients (famili_name, country) values ('Dio.R.D', 'Russia');` </br>
-- `insert into clients (famili_name, country) values ('Blackmore.R', 'Russia');` </br>
+- `insert into clients (family_name, country) values ('Ivanov.I.I', 'USA');` </br>
+- `insert into clients (family_name, country) values ('Petrov.P.P', 'Canada');` </br>
+- `insert into clients (family_name, country) values ('Bah.I.S', 'Japan');` </br>
+- `insert into clients (family_name, country) values ('Dio.R.D', 'Russia');` </br>
+- `insert into clients (family_name, country) values ('Blackmore.R', 'Russia');` </br>
 2) Вычислите количество записей для каждой таблицы: </br>
 - `select count(id) from orders` </br>
 ![screen](https://github.com/murzinvit/screen/blob/df5aa6d208e5daaa6b8a49b5e633feeb0103910c/SQL_select_count_id_clients.png) </br>
