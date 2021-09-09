@@ -70,5 +70,5 @@
 - `psql -U user template1` </br>
 - `create database test_db;`, `exit` </br>
 - `pg_restore -U user -d test_db < /mnt/test_db.sql` </br>
-- `psql -U user test_db`
+- `psql -U user test_db` </br>
 --------------------------------------------------------------------------- </br>
