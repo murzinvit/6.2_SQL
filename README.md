@@ -41,3 +41,8 @@
 #### Задача 4: </br>
 1) Используя foreign keys свяжите записи из таблиц, согласно таблице: </br>
 - 
+--------------------------------------------------------------------------- </br>
+Рабочие заметки: </br>
+Database backup: [test_db.sql](https://github.com/murzinvit/6.2_SQL/blob/30c37f35c5f85647e10a59693291f62b6c49d328/test_db.sql) </br>
+pg_dump -U user -F c test_db > /mnt/test_db.sql </br>
+pg_restore -U user -d test_db -f test_db.sql </br>
